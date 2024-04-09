@@ -205,13 +205,19 @@ header .login, .shop-now-button {
     padding-top: 8px;
     overflow: hidden;
     padding: 0 17px;
-    width: 100px;
-    height: 35px;
+
     justify-content: center;
     position: relative;
     white-space: nowrap;
 }
-
+header .login{
+    width: 100px;
+    height: 35px;
+}
+.shop-now-button{
+    width: 140px;
+    height: 40px;
+}
 header .login::before{
     content: '';
     display: block;
@@ -221,10 +227,7 @@ header .login::before{
     background-size: cover;
     margin-right: 4px;
 }
-.shop-now-button::before{
-    content: '';
-    display: block;
-}
+
 /* Стилізація банера */
 .banner .container {
     background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
@@ -238,6 +241,7 @@ header .login::before{
     max-width: 557px;
     display: inline-block;
     margin-right: 93px;
+    padding-left: 40px;
 }
 
 /* Стилі для заголовків у банері */
@@ -246,15 +250,15 @@ header .login::before{
     line-height: 171%;
     text-transform: uppercase;
     color: #3d3d3d;
-    padding-left:  43px;
+    padding-left:  3px;
 }
 .hero-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     color: #727272;
-    padding-left: 40px;
     margin-top: 5px;
+    padding-bottom: 44px;
 }
 
 .better-planet {
@@ -263,7 +267,6 @@ header .login::before{
     line-height: 100%;
     text-transform: uppercase;
     color: #3d3d3d;
-    padding-left: 40px;
     margin-top: 5px;
 }
 
