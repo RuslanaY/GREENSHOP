@@ -104,7 +104,11 @@
     max-width: 1211px;
     margin: auto;
 }
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 /* Стилізація заголовку */
 header {
     padding-top: 31px;
@@ -138,7 +142,6 @@ header nav li a {
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
-    margin-right: 50px;
 }
 nav ul {
     list-style-type: none;
@@ -175,6 +178,14 @@ header nav li:after {
 header nav li:hover:after {
     background-color: #46a358;
 }
+header nav li a {
+    font-weight: normal;
+    transition: font-weight 0.3s;
+}
+
+header nav li a:hover {
+    font-weight: bold;
+}
 
 /* Стилі для кнопки логіну */
 header .login, .shop-now-button {
@@ -186,15 +197,34 @@ header .login, .shop-now-button {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #46a358;
-    border: 2px solid dimgray;
     border-radius: 5px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     box-sizing: border-box;
     height: 35px;
     padding-top: 8px;
     overflow: hidden;
+    padding: 0 17px;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
 }
 
+header .login::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/Logout.svg');
+    background-size: cover;
+    margin-right: 4px;
+}
+.shop-now-button::before{
+    content: '';
+    display: block;
+}
 /* Стилізація банера */
 .banner .container {
     background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
@@ -211,11 +241,20 @@ header .login, .shop-now-button {
 }
 
 /* Стилі для заголовків у банері */
-.greenshop-welcome, .hero-text {
+.greenshop-welcome{
     font-size: 14px;
     line-height: 171%;
     text-transform: uppercase;
     color: #3d3d3d;
+    padding-left:  43px;
+}
+.hero-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    padding-left: 40px;
+    margin-top: 5px;
 }
 
 .better-planet {
@@ -224,6 +263,8 @@ header .login, .shop-now-button {
     line-height: 100%;
     text-transform: uppercase;
     color: #3d3d3d;
+    padding-left: 40px;
+    margin-top: 5px;
 }
 
 .planet {
