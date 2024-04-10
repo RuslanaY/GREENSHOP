@@ -1,23 +1,33 @@
 @font-face {
     font-family: 'cera_proregular';
-    src: url('fonts/cerapro-regular-webfont.eot');
-    src: url('fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/cerapro-regular-webfont.woff2') format('woff2'),
-    url('fonts/cerapro-regular-webfont.woff') format('woff'),
-    url('fonts/cerapro-regular-webfont.ttf') format('truetype'),
-    url('fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+    src: url('../fonts/cerapro-regular-webfont.eot');
+    src: url('../fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-regular-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-regular-webfont.woff') format('woff'),
+    url('../fonts/cerapro-regular-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'cera_problack';
-    src: url('fonts/cerapro-black-webfont.eot');
-    src: url('fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/cerapro-black-webfont.woff2') format('woff2'),
-    url('fonts/cerapro-black-webfont.woff') format('woff'),
-    url('fonts/cerapro-black-webfont.ttf') format('truetype'),
-    url('fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+    src: url('../fonts/cerapro-black-webfont.eot');
+    src: url('../fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-black-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-black-webfont.woff') format('woff'),
+    url('../fonts/cerapro-black-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../fonts/cerapro-medium-webfont.eot');
+    src: url('../fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-medium-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-medium-webfont.woff') format('woff'),
+    url('../fonts/cerapro-medium-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-medium-webfont.svg#cera_promedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -31,7 +41,6 @@
     padding: 52px 100px 50px;
     box-sizing: border-box;
 }
-
 /* Styles for login header */
 .login-header {
     text-align: center;
@@ -111,7 +120,6 @@
     display: block;
     width: 100%;
     max-width: 300px;
-    margin: auto;
     padding: 13px 11px;
     box-sizing: border-box;
     text-align: center;
@@ -119,14 +127,14 @@
     border: 2px solid dimgray;
     border-radius: 5px;
     color: black;
-    margin-bottom: 15px;
+    margin: auto auto 15px;
 }
 
 
 
 /* Основні стилі контейнера */
 .container {
-    max-width: 1211px;
+    max-width: 1200px;
     margin: auto;
 }
 * {
@@ -142,13 +150,14 @@ header .logo{
     margin-right: 229px;
 }
 header .login{
-    margin-left: 370px;
+    margin-left: 350px;
 }
 
 header .logo, header nav, header nav li {
     display: inline-block;
+    margin-top: 25px;
+    font-family: 'cera_proregular', serif;
 }
-
 header ul {
     list-style: none;
 }
@@ -167,7 +176,7 @@ header nav li a {
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
-    font-family: 'cera_proregular';
+    font-family: 'cera_proregular', serif;
 }
 nav ul {
     list-style-type: none;
@@ -209,7 +218,7 @@ header nav li a {
     transition: font-weight 0.3s;
 }
 
-header nav li a:hover {
+header nav li a:hover{
     font-weight: bold;
 }
 
@@ -228,7 +237,6 @@ header .login, .shop-now-button {
     align-items: center;
     box-sizing: border-box;
     height: 35px;
-    padding-top: 8px;
     overflow: hidden;
     padding: 0 17px;
 
@@ -277,6 +285,7 @@ header .login::before{
     text-transform: uppercase;
     color: #3d3d3d;
     padding-left:  3px;
+    font-family: 'cera_promedium', serif;
 }
 .hero-text{
     font-weight: 400;
@@ -285,7 +294,7 @@ header .login::before{
     color: #727272;
     margin-top: 5px;
     padding-bottom: 44px;
-    font-family: 'cera_proregular';
+    font-family: 'cera_proregular', serif;
 }
 
 .better-planet {
@@ -295,11 +304,10 @@ header .login::before{
     text-transform: uppercase;
     color: #3d3d3d;
     margin-top: 5px;
-    font-family: 'cera_problack';
+    font-family: 'cera_problack', serif;
 
 
 }
-
 .planet {
     color: #46a358;
 }
