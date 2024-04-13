@@ -319,8 +319,7 @@ header .login::before{
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto;
-    margin-top: 26px;
+    margin: 26px auto auto;
     align-items: flex-start;
 
 }
