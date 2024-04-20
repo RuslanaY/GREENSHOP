@@ -289,7 +289,6 @@ header nav li a {
 header nav li a:hover{
     font-weight: bold;
 }
-
 /* Стилі для кнопки логіну */
 header .login, .shop-now-button {
     font-size: 16px;
