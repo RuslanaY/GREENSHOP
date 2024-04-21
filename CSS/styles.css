@@ -114,7 +114,7 @@
     margin-top: 36px;
     margin-bottom: 27px;
 }
-
+/*Registre*/
 /* Styles for social media login buttons */
 .social-login-button {
     display: block;
@@ -130,201 +130,164 @@
     margin: auto auto 15px;
 }
 
+body{
+    width: 1200px;
+    margin: auto;
+}
+/* Стилізація основного контейнера заголовка */
+.flex_box_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    margin: 26px auto;
+    align-items: flex-start;
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+}
+/* Стилізація логотипу */
+.logo img {
+    width: 150px;
+}
 
+/* Стилізація навігаційного меню */
+.header_box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+/*випадаюче меню*/
+.header_box ul .dropdown{
+   display: block;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+.header_box ul .dropdown .drop_menu{
+    display: block;
+    position: absolute;
+    top:20px;
+    height: 0;
+    opacity: 0;
+    padding-top: 40px;
+    background: #edf6ee;
+    padding-left: 20px;
+    width: 188px;
+    height: 143px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.header_box ul .dropdown .drop_menu a{
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.header_box ul .dropdown .drop_menu a:hover {
+    background-color: #45a049;
+    color: white;
+}
+.header_box ul .dropdown:hover .drop_menu{
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+}
+
+/* Стилізація субменю */
+.drop .drop-submenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 100px;
+    min-width: 160px;
+    background: #edf6ee;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.drop:hover .drop-submenu {
+    display: block;
+}
+
+.header_box ul li {
+    margin-right: 50px;
+}
+
+.header_box ul li:last-child {
+    margin-right: 0;
+}
+
+.header_box ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.header_box ul li a:hover {
+    font-weight: bold;
+}
+
+.header_box ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+.header_box ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* Стилізація кнопки входу */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.login img {
+    margin-right: 5px;
+    width: 20px;
+    height: auto;
+}
 
 /* Основні стилі контейнера */
 .container {
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-/* Стилізація заголовку */
-header {
-    padding-top: 31px;
-    display: flex;
-    justify-content: space-between;
-}
-header .logo{
-    margin-right: 229px;
-}
-header .login{
-    margin-left: 350px;
-}
 
-header .logo, header nav, header nav li {
-    display: inline-block;
-    font-family: 'cera_proregular', serif;
-}
-header ul {
-    list-style: none;
-}
-
-/* Стилі для навігаційних посилань */
-header nav li {
-    margin-right: 50px;
-
-}
-
-header nav li:last-of-type {
-    margin-right: 0;
-}
-
-header nav li a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    color: #3d3d3d;
-    font-family: 'cera_proregular', serif;
-}
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav li {
-    display: inline-block;
-    margin-right: 50px;
-}
-header nav ul .dropdown{
-    display: block;
-    background: #edf6ee;
-    position: absolute;
-    top: 80px;
-    height: 0;
-    opacity: 0;
-}
-header nav ul .dropdown li{
-    display: block;
-}
-header nav ul .drop:hover .dropdown{
-    opacity: 1;
-    height: auto;
-    transition: 0.5s;
-}
-nav li:last-of-type {
-    margin-right: 0;
-}
-header nav ul li .drop{
-    position: relative;
-    width: 188px;
-    height: 143px;
-
-}
-header nav ul .dropdown .dropdown-submenu{
-    display: block;
-    background: #edf6ee;
-    position: absolute;
-    top: 80px;
-    height: 0;
-    opacity: 0;
-    width: 178px;
-    height: 215px;
-    white-space: nowrap;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    }
-.drop_submenu a, .dropdown-submenu a {
-    color: black;
-    text-decoration: none;
-    white-space: nowrap;
-
-}
-.drop_submenu:hover .dropdown-submenu{
-    top: 0;
-    left: 100%;
-}
-header nav ul .drop_submenu:hover .dropdown-submenu{
-    opacity: 1;
-    height: auto;
-    transition: 0.5s;
-    top: 0;
-    left: 100%;
-}
-.drop_submenu:hover > a {
-    background: #1a712a;
-    color: white;
-
-}
-.drop_submenu a {
-    transition: background-color 0.3s, color 0.3s;
-}
-.arrow {
-    fill: currentColor;
-    transition: transform 0.3s;
-}
-.drop_submenu:hover > a .arrow {
-    transform: rotate(180deg);
-}
-nav a {
-    text-decoration: none; /
-    color: #3d3d3d;
-    font-weight: 400;
-    font-size: 16px;
-}
-/* Ефект підкреслення при наведенні */
-header nav li:after {
-    content: "";
-    display: block;
-    margin-top: 22px;
-    height: 3px;
-    width: 100%;
-    background-color: transparent;
-    transition: background-color 0.3s;
-}
-header nav li:hover:after {
-    background-color: #46a358;
-}
-header nav li a {
-    font-weight: normal;
-    transition: font-weight 0.3s;
-}
-
-header nav li a:hover{
-    font-weight: bold;
-}
-/* Стилі для кнопки логіну */
-header .login, .shop-now-button {
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    text-align: center;
-    line-height: 125%;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #46a358;
-    border-radius: 5px;
-    display: inline-flex;
-    align-items: center;
-    box-sizing: border-box;
-    height: 35px;
-    overflow: hidden;
-    padding: 0 17px;
-    justify-content: center;
-    position: relative;
-    white-space: nowrap;
-}
-header .login{
-    width: 100px;
-    height: 35px;
-}
-.shop-now-button{
-    height: 40px;
-}
-header .login::before{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-image: url('images/Logout.svg');
-    background-size: cover;
-    margin-right: 4px;
-}
 
 /* Стилізація банера */
 .banner .container {
@@ -372,6 +335,25 @@ header .login::before{
 }
 .planet {
     color: #46a358;
+}
+
+.shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.shop-now-button:hover {
+    background-color: #3e8e41;
+    color: #fff;
 }
 
 /*Категорії товарів*/
@@ -472,7 +454,7 @@ header .login::before{
     display: flex;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50px);
     bottom: 67px;
     width: auto;
     padding: 0 10px;
@@ -491,7 +473,7 @@ header .login::before{
     width: 20px;
     height: 20px;
     display: block;
-    background-color: rgba(255, 255, 255, 0.9);
+
 }
 .dropdown-container .d_flex article ul li:last-child {
     margin-right: 0;
@@ -816,6 +798,7 @@ footer{
     justify-content: center;
     gap: 10px;
 }
+
 .box_social_media ul li {
     display: inline-block;
 }
