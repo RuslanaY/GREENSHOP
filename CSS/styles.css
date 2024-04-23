@@ -472,9 +472,11 @@ body{
 .product-description ul li a img{
     width: 20px;
     height: 20px;
+    margin-top: 12px;
     display: block;
-
+    font-style: normal;
 }
+
 .dropdown-container .d_flex article ul li:last-child {
     margin-right: 0;
 }
@@ -527,10 +529,10 @@ margin-right: 50px;
     height: 291px;
 }
 
-.d_flex article p, .d_flex article span {
+.d_flex article p, .d_flex article span{
     margin: 5px 0;
-
 }
+
 .d_flex span{
     color: #46a358;
 }
@@ -548,6 +550,10 @@ margin-right: 50px;
 .categories .right_content .pagination ul li{
     list-style: none;
     margin-left: 10px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
 }
 .pagination a{
     border: 1px solid #e5e5e5;
@@ -561,6 +567,7 @@ margin-right: 50px;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
+
 }
 .categories .pagination ul li:last-of-type:hover a svg path{
     /*content: "";*/
