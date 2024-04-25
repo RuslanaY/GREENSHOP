@@ -165,6 +165,9 @@ body{
     position: relative;
     align-items: center;
 }
+.header_box ul .dropdown .drop_menu a:after{
+    display: none;
+}
 .header_box ul .dropdown .drop_menu{
     display: block;
     position: absolute;
@@ -173,12 +176,11 @@ body{
     opacity: 0;
     padding-top: 40px;
     background: #edf6ee;
-    padding-left: 20px;
     width: 188px;
     height: 143px;
     font-weight: 400;
     font-size: 16px;
-    margin-right: 10px;
+    margin-right: 0px;
     border-radius: 5px;
 }
 .header_box ul .dropdown .drop_menu a{
@@ -187,6 +189,7 @@ body{
     color: black;
     text-decoration: none;
     transition: background-color 0.3s;
+    margin-right: 0;
 }
 .header_box ul .dropdown .drop_menu a:hover {
     background-color: #45a049;
@@ -209,8 +212,7 @@ body{
     min-width: 160px;
     background: #edf6ee;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    padding-left: 20px;
-    margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .drop:hover .drop-submenu {
@@ -252,7 +254,23 @@ body{
     width: 100%;
 }
 
-
+.shopping-cart-icon svg {
+    width: 29px;
+    height: 24px;
+     margin-left: 30px;
+}
+.frame_icon{
+    width: 20px;
+    height: 20px;
+}
+.header-icons {
+    display: flex;
+    align-items: center;
+margin-right: 30px;
+}
+.header-icons-login{
+    display: flex;
+}
 /* Стилізація кнопки входу */
 .login {
     display: flex;
@@ -365,6 +383,11 @@ body{
     margin: 26px auto;
     align-items: flex-start;
 }
+.left_sidebar .category{
+    width: 268px;
+    height: 560px;
+    background: #fbfbfb;
+}
 .categories .left_sidebar{
     max-width: 310px;
     background-color: #fbfbfb;
@@ -372,12 +395,22 @@ body{
     padding-left: 20px;
     font-weight: 400;
     color: #3d3d3d;
+
+}
+.left_sidebar h4 a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    text-decoration: none;
 }
 .left_sidebar .category_list {
     list-style-type: none;
-    margin-bottom: 377px;
+    margin-bottom: 300px;
     line-height: 267%;
+
 }
+
 .left_sidebar img{
     width: 310px;
     flex-basis: auto;
@@ -387,9 +420,90 @@ body{
     padding: 8px;
     cursor: pointer;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.left_sidebar .category_list li span{
+    display: inline-block;
 }
 
 .left_sidebar .category_list li:hover {
+    color: green;
+}
+/*Слайдер*/
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Дозволяє позиціонувати дочірні елементи відносно цього контейнера */
+}
+
+.ellipse {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.line {
+    height: 3px;
+    background-color: #46A358;
+    flex-grow: 1; /* Забезпечує розтягування лінії між кругами */
+}
+.line-extended {
+    position: absolute;
+    height: 1px; /* Тонша лінія */
+    background-color: #A9DFBF; /* Блідіший відтінок зеленого */
+    width: 100%; /* Робить лінію трохи довшою за основну */
+    z-index: -1; /* Забезпечує, що лінія буде під основною зеленою лінією */
+}
+.price_filter{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+margin-bottom: 16px;
+}
+.price_filter span{
+    font-weight: 700;
+    color: #46a358;
+}
+.filter_button{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #fff;
+    background: #46a358;
+    width: 90px;
+    height: 35px;
+     margin-bottom: 46px;
+}
+.left_sidebar .size_list li {
+    padding: 8px;
+    cursor: pointer;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 19px;
+}
+.left_sidebar .size_list li span{
+    display: inline-block;
+}
+
+.left_sidebar .size_list li:hover {
     color: green;
 }
 /*dropdown container*/
@@ -488,9 +602,14 @@ margin-right: 50px;
     padding: 8px;
     cursor: pointer;
 }
-
+.d_flex .product-description ul li:hover a svg path{
+    stroke: #46a358!important;
+}
+.categories .d_flex ul li:hover a{
+    color: #46a358;
+}
 .right_content .flex_2 li:hover {
-    color: green;
+    color: #46a358;
 }
 
 .right_content .flex_2 li:after {
@@ -569,6 +688,7 @@ margin-right: 50px;
     color: #3d3d3d;
 
 }
+
 .categories .pagination ul li:last-of-type:hover a svg path{
     /*content: "";*/
     /*display: inline-block;*/
