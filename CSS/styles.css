@@ -488,9 +488,14 @@ margin-right: 50px;
     padding: 8px;
     cursor: pointer;
 }
-
+.d_flex .product-description ul li:last-of-type:hover a svg path{
+    stroke: #46a358!important;
+}
+.categories .d_flex ul li:hover a{
+    color: #46a358;
+}
 .right_content .flex_2 li:hover {
-    color: green;
+    color: #46a358;
 }
 
 .right_content .flex_2 li:after {
@@ -569,6 +574,7 @@ margin-right: 50px;
     color: #3d3d3d;
 
 }
+
 .categories .pagination ul li:last-of-type:hover a svg path{
     /*content: "";*/
     /*display: inline-block;*/
