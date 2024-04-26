@@ -502,7 +502,6 @@ margin-bottom: 16px;
 .left_sidebar .size_list li span{
     display: inline-block;
 }
-
 .left_sidebar .size_list li:hover {
     color: green;
 }
@@ -522,7 +521,6 @@ margin-bottom: 16px;
     display: flex;
     align-items: center;
 }
-
 .dropdown-container p {
     margin-right: 10px;
 }
