@@ -293,7 +293,6 @@ body{
 .header_box ul li:last-child {
     margin-right: 0;
 }
-
 .header_box ul li a {
     text-decoration: none;
     color: #333;
@@ -305,7 +304,6 @@ body{
 .header_box ul li a:hover {
     font-weight: bold;
 }
-
 .header_box ul li a::after {
     content: '';
     position: absolute;
@@ -316,11 +314,9 @@ body{
     background-color: #4CAF50;
     transition: width 0.3s ease;
 }
-
 .header_box ul li a:hover::after {
     width: 100%;
 }
-
 .shopping-cart-icon svg {
     width: 29px;
     height: 24px;
