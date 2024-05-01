@@ -32,6 +32,13 @@
     font-style: normal;
 
 }
+:root {
+    --main-font: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+}
 
 /* Styles for login container */
 .login-container {
@@ -67,6 +74,7 @@
     font-size: 13px;
     line-height: 123%;
     color: #3d3d3d;
+    margin-bottom: 14px;
 }
 
 /* Styles for form inputs */
@@ -79,8 +87,24 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 114%;
-    color: #a5a5a5;
+    color: #eaeaea;
     margin-bottom: 16px;
+    border: 1px solid #eaeaea;
+}
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 30px;
+}
+
+.password-field svg {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 /* Styles for password confirmation input */
@@ -128,7 +152,14 @@
     color: black;
     margin: auto auto 15px;
 }
+.social-login-button svg {
+    vertical-align: middle;
+    margin-right: 8px;
+}
 
+.register_login{
+    color: #46A358;
+}
 body{
     width: 1200px;
     margin: auto;
@@ -146,7 +177,24 @@ body{
 /* Стилізація логотипу */
 .logo img {
     width: 150px;
+
 }
+@keyframes bounceLogo {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.logo img {
+    animation: bounceLogo 1s infinite;
+}
+
 
 /* Стилізація навігаційного меню */
 .header_box ul {
@@ -156,6 +204,7 @@ body{
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
+    font-weight: 700;
 }
 /*випадаюче меню*/
 .header_box ul .dropdown{
@@ -163,12 +212,13 @@ body{
     list-style: none;
     position: relative;
     align-items: center;
+    font-weight: 700;
 }
 .header_box ul .dropdown .drop_menu a:after{
     display: none;
 }
 .header_box ul .dropdown .drop_menu{
-    display: block;
+    display: none;
     position: absolute;
     top:20px;
     opacity: 0;
@@ -181,13 +231,19 @@ body{
     margin-right: 0;
     border-radius: 5px;
 }
+.header_box ul .dropdown:hover .drop_menu{
+    display: block;
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+}
+
 .header_box ul .dropdown .drop_menu a{
     display: block;
     padding: 10px 20px;
     color: black;
     text-decoration: none;
     transition: background-color 0.3s;
-    margin-right: 0;
     margin-right: -50px;
     width: 178px;
     height: 35px;
@@ -195,14 +251,12 @@ body{
 .header_box ul .dropdown .drop_menu a:hover {
     background-color: #45a049;
     color: white;
-
 }
 .header_box ul .dropdown:hover .drop_menu{
     opacity: 1;
     height: auto;
     transition: 0.5s;
 }
-
 /* Стилізація субменю */
 .drop .drop-submenu {
     display: none;
@@ -299,7 +353,7 @@ body{
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     border: none;
     border-radius: 5px;
     padding: 0 10px;
@@ -332,7 +386,6 @@ body{
     align-items: center;
     min-height: 450px;
 }
-
 .banner article {
     max-width: 557px;
     display: inline-block;
@@ -573,6 +626,22 @@ body{
     margin-left: 10px;
     text-decoration: line-through;
 }
+@keyframes scroll {
+    0% {
+        transform: translateX(0%); /* Початкове положення справа за межами екрану */
+    }
+    100% {
+        transform: translateX(100%); /* Кінцеве положення зліва за межами екрану */
+    }
+}
+
+.sale {
+    display: inline-block; /* Важливо для застосування transform */
+    white-space: nowrap; /* Запобігає переносу тексту на новий рядок */
+    position: relative; /* Потрібно для правильного позиціонування */
+    animation: scroll 5s linear infinite;
+}
+
 .product-description ul{
     list-style-type: none;
     display: flex;
@@ -703,15 +772,13 @@ margin-right: 50px;
     animation: slideright 1s infinite;
 }
 @keyframes slideright {
-    0%{
-left: 0;
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 50px;
+    }
 }
-100%{
-left: 50px;
-}
-
-}
-
 
 .categories .pagination ul li:last-of-type:hover a svg path{
     /*content: "";*/
@@ -737,6 +804,7 @@ left: 50px;
     max-width: 1200px;
     margin: 26px auto;
     align-items: flex-start;
+
 }
 .read-more-btn {
     display: inline-block;
@@ -796,7 +864,9 @@ left: 50px;
     flex-wrap: nowrap;
     overflow-x: auto;
 }
-
+.blog_post .d_flex{
+    margin-bottom: 124px;
+}
 .article_container {
     display: flex;
     align-items: flex-start;
@@ -829,6 +899,10 @@ left: 50px;
     transform: translateX(5px);
 }
 
+.d_flex .article_container img{
+    align-items: center;
+    height: 195px;
+}
 
 /*footer*/
 footer{
@@ -880,7 +954,7 @@ footer{
 }
 .large-box .email-form input[type="email"] {
     flex-grow: 1;
-    border-radius: 4px;
+    border-radius: 4px 0 0 4px;
     border: 1px solid #ccc;
 }
 .large-box .email-form button {
@@ -889,7 +963,7 @@ footer{
     background: #46a358;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 0  4px 4px 0;
 }
 .flex-box-2 {
     display: flex;
@@ -971,4 +1045,8 @@ margin-bottom: 5px;
 .copyright{
     text-align: center;
     margin: 20px 0;
+}
+.flex-box-3 a{
+    text-decoration: none;
+    color: inherit;
 }
