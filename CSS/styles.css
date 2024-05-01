@@ -237,7 +237,6 @@ body{
     height: auto;
     transition: 0.5s;
 }
-
 .header_box ul .dropdown .drop_menu a{
     display: block;
     padding: 10px 20px;
@@ -285,7 +284,6 @@ body{
 .drop:hover .drop-submenu {
     display: block;
 }
-
 .header_box ul li {
     margin-right: 50px;
 }
