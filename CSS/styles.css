@@ -174,7 +174,7 @@ body{
     opacity: 0;
     padding-top: 40px;
     background: #edf6ee;
-    width: 188px;
+    width: 178px;
     height: 143px;
     font-weight: 400;
     font-size: 16px;
@@ -188,10 +188,14 @@ body{
     text-decoration: none;
     transition: background-color 0.3s;
     margin-right: 0;
+    margin-right: -50px;
+    width: 178px;
+    height: 35px;
 }
 .header_box ul .dropdown .drop_menu a:hover {
     background-color: #45a049;
     color: white;
+
 }
 .header_box ul .dropdown:hover .drop_menu{
     opacity: 1;
@@ -212,7 +216,18 @@ body{
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     margin-right: 0;
 }
-
+.drop .drop-submenu li:last-of-type{
+    width: 178px;
+}
+.dropdown .drop_menu .drop .drop_menu:hover {
+    background-color: #45a049;
+    color: white;
+}
+.header_box ul .dropdown:hover .drop_menu{
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+}
 .drop:hover .drop-submenu {
     display: block;
 }
@@ -682,6 +697,21 @@ margin-right: 50px;
     line-height: 89%;
     color: #3d3d3d;
 }
+.pagination ul li svg:last-of-type{
+    display: inline-block;
+    position: relative;
+    animation: slideright 1s infinite;
+}
+@keyframes slideright {
+    0%{
+left: 0;
+}
+100%{
+left: 50px;
+}
+
+}
+
 
 .categories .pagination ul li:last-of-type:hover a svg path{
     /*content: "";*/
