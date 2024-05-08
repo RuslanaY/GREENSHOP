@@ -1,0 +1,138 @@
+@media only screen and (max-width: 1200px) {
+    .header_box{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+/* Правила для телефонів (ширина екрану до 600px) */
+@media only screen and (max-width: 600px) {
+    .header_box ul {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .logo img {
+        width: 120px !important; /* Зменшуємо логотип */
+    }
+
+    .header_box ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_box ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown .drop_menu {
+        width: 100%;
+        top: 20px;
+        left: 0;
+        position: static;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .categories, .right_content {
+        flex-direction: column;
+    }
+
+    .blog .d_flex {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Правила для планшетів (ширина екрану від 600px до 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .flex_box_header, .header_box ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .header_box ul {
+        justify-content: center;
+    }
+
+    .header_box ul li {
+        width: auto;
+    }
+
+    .dropdown .drop_menu {
+        width: 100%;
+        top: 20px;
+        left: 0;
+        position: static;
+    }
+
+    .banner img {
+        width: 50%;
+    }
+
+    .categories, .right_content {
+        flex-direction: row;
+    }
+
+    .blog .d_flex {
+        flex-direction: row;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* Правила для десктопів (ширина екрану від 900px) */
+@media only screen and (min-width: 900px) {
+    .flex_box_header, .header_box ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .header_box ul {
+        justify-content: flex-end;
+    }
+
+    .dropdown .drop_menu {
+        position: absolute;
+        width: 200px;
+        left: 0;
+    }
+
+    .banner img {
+        width: 50%;
+    }
+
+    .categories, .right_content {
+        flex-direction: row;
+    }
+
+    .blog .d_flex {
+        flex-direction: row;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
