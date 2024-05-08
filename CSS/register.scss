@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'cera_proregular';
+  src: url('../fonts/cerapro-regular-webfont.eot');
+  src: url('../fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/cerapro-regular-webfont.woff2') format('woff2'),
+  url('../fonts/cerapro-regular-webfont.woff') format('woff'),
+  url('../fonts/cerapro-regular-webfont.ttf') format('truetype'),
+  url('../fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cera_problack';
+  src: url('../fonts/cerapro-black-webfont.eot');
+  src: url('../fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/cerapro-black-webfont.woff2') format('woff2'),
+  url('../fonts/cerapro-black-webfont.woff') format('woff'),
+  url('../fonts/cerapro-black-webfont.ttf') format('truetype'),
+  url('../fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cera_promedium';
+  src: url('../fonts/cerapro-medium-webfont.eot');
+  src: url('../fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/cerapro-medium-webfont.woff2') format('woff2'),
+  url('../fonts/cerapro-medium-webfont.woff') format('woff'),
+  url('../fonts/cerapro-medium-webfont.ttf') format('truetype'),
+  url('../fonts/cerapro-medium-webfont.svg#cera_promedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+:root {
+  --main-font: 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+/* Styles for login container */
+.login-container {
+  max-width: 500px;
+  margin: auto;
+  border: solid 2px black;
+  padding: 52px 100px 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* Styles for login header */
+.login-header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  color: #3d3d3d;
+}
+
+.register_login{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  color: #46a358;
+
+}
+
+.login-header span:nth-child(2) {
+  font-weight: 250;
+  font-size: 18px;
+  line-height: 89%;
+  margin: 4px;
+}
+
+/* Styles for login description */
+.login-description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+  margin-bottom: 14px;
+}
+
+/* Styles for form inputs */
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #eaeaea;
+  margin-bottom: 16px;
+  border: 1px solid #eaeaea;
+}
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 30px;
+}
+
+.password-field svg {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Styles for password confirmation input */
+.confirm-password-input {
+  height: 45px;
+  margin-bottom: 41px;
+}
+
+/* Styles for register button */
+.register-button {
+  width: 100%;
+  height: 45px;
+  padding: 15px 119px;
+  background-color: #46a358;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+/* Styles for alternative registration options */
+.registration-options {
+  font-weight: 400;
+  font-size: 13px;
+  color: #3d3d3d;
+  text-align: center;
+  width: 100%;
+  height: 16px;
+  margin-top: 36px;
+  margin-bottom: 27px;
+}
+/* Styles for social media login buttons */
+.social-login-button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 13px 11px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid dimgray;
+  border-radius: 5px;
+  color: black;
+  margin: auto auto 15px;
+}
+.social-login-button svg {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.register_login{
+  color: #46A358;
+}
