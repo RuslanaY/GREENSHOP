@@ -611,6 +611,18 @@ body {
   color: #3d3d3d;
 }
 
+.blog_info {
+  display: block;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+.blog_info .post {
+  text-align: center;
+}
+.blog_info .post_p {
+  text-align: center;
+}
+
 .blog .blog_post {
   display: flex;
   justify-content: space-between;
@@ -628,16 +640,6 @@ body {
   padding: 15px;
   max-width: 586px;
   align-items: center;
-}
-.blog .blog_post .d_flex .blog_info {
-  flex-basis: 100%;
-  margin-bottom: 20px;
-}
-.blog .blog_post .d_flex .blog_info .post {
-  text-align: center;
-}
-.blog .blog_post .d_flex .blog_info .post_p {
-  text-align: center;
 }
 .blog .blog_post .d_flex .article_container img {
   align-items: center;

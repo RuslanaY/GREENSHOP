@@ -663,6 +663,18 @@ body{
     }
   }
 }
+
+.blog_info {
+  display: block;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  .post{
+    text-align: center;
+  }
+  .post_p{
+    text-align: center;
+  }
+}
 .blog{
   .blog_post{
     display: flex;
@@ -681,16 +693,6 @@ body{
         padding: 15px;
         max-width: 586px;
         align-items: center;
-      }
-      .blog_info {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-        .post{
-          text-align: center;
-        }
-        .post_p{
-          text-align: center;
-        }
       }
       .article_container img{
         align-items: center;
