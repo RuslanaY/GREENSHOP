@@ -1,140 +1,81 @@
-@media only screen and (max-width: 1200px) {
-    .header_box{
-        padding-right: 15px;
-        padding-left: 15px;
+
+@media (max-width: 768px) {
+    body {
+        width: auto;
+        padding: 0 20px;
     }
-}
-/* Правила для телефонів (ширина екрану до 600px) */
-@media only screen and (max-width: 600px) {
-    .header_box ul {
+
+    .flex_box_header, .categories .container_2, .blog .blog_post {
         flex-direction: column;
-        align-items: center;
-        margin-right: 15px;
     }
 
     .logo img {
-        width: 120px !important; /* Зменшуємо логотип */
+        width: 120px;
     }
 
     .header_box ul {
-        width: 100%;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .header_box ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .categories .left_sidebar, .categories .right_content {
         width: 100%;
+        max-width: none;
+    }
+
+    .right_content .d_flex {
+        flex-direction: column;
+    }
+
+    .right_content .d_flex article {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .flex-box, footer .flex-box-2, footer .flex-box-3 {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .flex_box_header {
+        margin: 10px auto;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .header_icons-login .header-icons, .header_icons-login .login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_icons-login .login {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .banner .container {
+        flex-direction: column;
         text-align: center;
     }
 
-    .dropdown .drop_menu {
-        width: 100%;
-        top: 20px;
-        left: 0;
-        position: static;
-    }
-
-    .banner {
-        flex-direction: column;
-    }
-
-    .banner img {
+    .banner article, .blog .article_container, .footer-container .large-box {
+        padding: 10px;
         width: 100%;
     }
 
-    .categories, .right_content {
-        flex-direction: column;
-    }
-
-    .blog .d_flex {
-        flex-direction: column;
-    }
-
-    .footer-container {
-        flex-direction: column;
+    .categories .left_sidebar .category_list, .footer-container .box {
+        padding: 0 10px;
     }
 }
-
-/* Правила для планшетів (ширина екрану від 600px до 900px) */
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-    .flex_box_header, .header_box ul {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .logo img {
-        width: 140px;
-    }
-
-    .header_box ul {
-        justify-content: center;
-    }
-
-    .header_box ul li {
-        width: auto;
-    }
-
-    .dropdown .drop_menu {
-        width: 100%;
-        top: 20px;
-        left: 0;
-        position: static;
-    }
-
-    .banner img {
-        width: 50%;
-    }
-
-    .categories, .right_content {
-        flex-direction: row;
-    }
-
-    .blog .d_flex {
-        flex-direction: row;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
-/* Правила для десктопів (ширина екрану від 900px) */
-@media only screen and (min-width: 900px) {
-    .flex_box_header, .header_box ul {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logo img {
-        width: 150px;
-    }
-
-    .header_box ul {
-        justify-content: flex-end;
-    }
-
-    .dropdown .drop_menu {
-        position: absolute;
-        width: 200px;
-        left: 0;
-    }
-
-    .banner img {
-        width: 50%;
-    }
-
-    .categories, .right_content {
-        flex-direction: row;
-    }
-
-    .blog .d_flex {
-        flex-direction: row;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-

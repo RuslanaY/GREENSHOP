@@ -647,8 +647,6 @@ body {
   height: 195px;
 }
 .blog .d_flex .article_container {
-  display: flex;
-  align-items: flex-start;
   gap: 20px;
 }
 .blog .d_flex .article_container .article_date {
