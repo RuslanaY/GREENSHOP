@@ -42,6 +42,7 @@ $main_font:'cera_proregular';
 
 body {
   font-family: var(--main-font);
+
 }
 
 /* Стилізація основного контейнера заголовка */
@@ -737,15 +738,14 @@ body{
   }
 
 /*footer*/
-footer{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 26px auto;
-  align-items: flex-start;
-  background: #fbfbfb;
   .footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 26px auto;
+    align-items: flex-start;
+    background: #fbfbfb;
     .flex-box {
       display: flex;
       flex-direction: row;
@@ -869,7 +869,7 @@ footer{
     }
 
   }
-}
+
 .copyright{
   text-align: center;
   margin: 20px 0;
@@ -936,5 +936,91 @@ span{
   margin: 10px;
   background: #3d3d3d;
 }
+  }
+}
+.owl-carousel{
+.owl-nav{
+  button.owl-prev{
+    span{
+      display: none;
+    }
+    background-image: url("../images/arrow1.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -30px;
+    top: 150px;
+    font-size: 50px;
+    font-weight: bold;
+    transform: rotate(180deg);
+  }
+  button.owl-next{
+    span{
+      display: none;
+    }
+    background-image: url("../images/arrow1.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -30px;
+    top: 150px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+}
+
+.ui-widget.ui-widget-content{
+border: 1px solid #46A358;
+  .ui-widget-header{
+    background: #46A358;
+  }
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: 1px solid #46A358;
+    background: #46A358;
+    border-radius: 10px;
+  }
+}
+
+.faq{
+
+  .container{
+    max-width: 1200px;
+    margin: auto;
+  }
+  .ui-accordion .ui-accordion-header{
+    border-radius: 22px;
+    padding: 20px 16px;
+    background-color: transparent;
+    border: solid 2px #34a853;
+    &.ui-state-active{
+      background-color: #A9DFBF;
+      border-bottom: none;
+      border-radius: 22px 22px 0 0;
+      .ui-icon{
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: solid 2px #34a853;
+    color: black;
+  }
+  .ui-accordion .ui-accordion-content{
+    border: solid 2px #34a853;
+    background-color: #A9DFBF;
+    border-radius: 0 0 22px 22px;
+    border-top: none;
+  }
+  .ui-icon{
+    position: absolute;
+    right: 20px;
+    margin-top: 5px;
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+
   }
 }

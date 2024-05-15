@@ -1,12 +1,13 @@
 
+/* Медіа запити для планшетів */
 @media (max-width: 768px) {
     body {
         width: auto;
         padding: 0 20px;
     }
 
-    .flex_box_header, .categories .container_2, .blog .blog_post {
-        flex-direction: column;
+    .flex_box_header {
+        flex-wrap: wrap;
     }
 
     .logo img {
@@ -15,12 +16,16 @@
 
     .header_box ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .header_box ul li {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .categories .container_2 {
+        flex-wrap: wrap;
     }
 
     .categories .left_sidebar, .categories .right_content {
@@ -43,12 +48,44 @@
     footer .flex-box, footer .flex-box-2, footer .flex-box-3 {
         flex-direction: column;
     }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .flex-box .box,
+    footer .flex-box-2 .box_gradient p,
+    footer .flex-box-3 .box {
+        width: 100%;
+        margin: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    footer .footer-container .large-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-container .email-form {
+        flex-direction: column;
+    }
+
+{
+    .carousel-item {
+        padding: 15px;
+    }
 }
 
-
+/* Медіа запити для мобільних пристроїв */
 @media (max-width: 480px) {
     .flex_box_header {
-        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .header_box {
+        flex-direction: column;
     }
 
     .logo img {
@@ -78,4 +115,47 @@
     .categories .left_sidebar .category_list, .footer-container .box {
         padding: 0 10px;
     }
+
+    .categories .container_2 {
+        flex-wrap: wrap;
+    }
+
+    .right_content .d_flex {
+        flex-direction: column;
+    }
+
+    .right_content .d_flex article {
+        width: 100%;
+    }
+    footer {
+        padding: 10px;
+    }
+
+    footer .flex-box,
+    footer .flex-box-2,
+    footer .flex-box-3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    footer .flex-box .box,
+    footer .flex-box-2 .box_gradient,
+    footer .flex-box-3 .box {
+        padding: 8px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+{
+    .carousel-item {
+        display: block;
+    }
 }
+}
+}
+
+
+
+
+

@@ -682,7 +682,7 @@ body {
 }
 
 /*footer*/
-footer {
+.footer-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -691,7 +691,7 @@ footer {
   align-items: flex-start;
   background: #fbfbfb;
 }
-footer .footer-container .flex-box {
+.footer-container .flex-box {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -699,37 +699,37 @@ footer .footer-container .flex-box {
   padding: 10px;
   width: 100%;
 }
-footer .footer-container .flex-box .box {
+.footer-container .flex-box .box {
   flex: 1;
   padding: 15px;
   margin: 5px;
 }
-footer .footer-container .flex-box .large-box {
+.footer-container .flex-box .large-box {
   flex: 2;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   color: black;
 }
-footer .footer-container .flex-box .large-box h4, footer .footer-container .flex-box .large-box p {
+.footer-container .flex-box .large-box h4, .footer-container .flex-box .large-box p {
   text-align: left;
   width: 100%;
 }
-footer .footer-container .flex-box .large-box .email-form {
+.footer-container .flex-box .large-box .email-form {
   display: flex;
   width: 100%;
   justify-content: center;
   gap: 0;
   margin: 10px 0;
 }
-footer .footer-container .flex-box .large-box .email-form input[type=email] {
+.footer-container .flex-box .large-box .email-form input[type=email] {
   padding: 10px;
   font-size: 16px;
   flex-grow: 1;
   border-radius: 4px 0 0 4px;
   border: 1px solid #ccc;
 }
-footer .footer-container .flex-box .large-box .email-form button {
+.footer-container .flex-box .large-box .email-form button {
   font-size: 16px;
   padding: 10px 30px;
   border: none;
@@ -738,7 +738,7 @@ footer .footer-container .flex-box .large-box .email-form button {
   cursor: pointer;
   border-radius: 0 4px 4px 0;
 }
-footer .footer-container .flex-box-2 {
+.footer-container .flex-box-2 {
   background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%); /* Змінено кольори для більш світлого градієнта */
   display: flex;
   flex-direction: row;
@@ -749,7 +749,7 @@ footer .footer-container .flex-box-2 {
   font-size: 13px;
   line-height: 123%;
 }
-footer .footer-container .flex-box-2 .box_gradient {
+.footer-container .flex-box-2 .box_gradient {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -757,19 +757,20 @@ footer .footer-container .flex-box-2 .box_gradient {
   justify-content: space-between;
   padding-left: 10px;
 }
-footer .footer-container .flex-box-2 .box_gradient .info-item {
+.footer-container .flex-box-2 .box_gradient .info-item {
   display: flex;
   align-items: center;
   width: 100%;
   padding-left: 100px;
 }
-footer .footer-container .flex-box-2 .box_gradient .info-item p {
+.footer-container .flex-box-2 .box_gradient .info-item p {
   margin: 0;
 }
-footer .footer-container .flex-box-2 .box_gradient .logo {
+.footer-container .flex-box-2 .box_gradient .logo {
   margin-bottom: 50px;
 }
-footer .flex-box-3 {
+
+.flex-box-3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -779,7 +780,7 @@ footer .flex-box-3 {
   font-size: 13px;
   line-height: 123%;
 }
-footer .flex-box-3 .box_social_media ul {
+.flex-box-3 .box_social_media ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
@@ -789,10 +790,10 @@ footer .flex-box-3 .box_social_media ul {
   justify-content: center;
   gap: 10px;
 }
-footer .flex-box-3 .box_social_media ul li {
+.flex-box-3 .box_social_media ul li {
   display: inline-block;
 }
-footer .flex-box-3 .box {
+.flex-box-3 .box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -802,12 +803,12 @@ footer .flex-box-3 .box {
   font-size: 13px;
   line-height: 123%;
 }
-footer .flex-box-3 .box ul {
+.flex-box-3 .box ul {
   list-style: none;
   padding: 0;
   margin-top: 10px;
 }
-footer .flex-box-3 .box ul li {
+.flex-box-3 .box ul li {
   margin-bottom: 5px;
 }
 
@@ -874,6 +875,85 @@ footer .flex-box-3 .box ul li {
   border-radius: 50%;
   margin: 10px;
   background: #3d3d3d;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  background-image: url("../images/arrow1.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -30px;
+  top: 150px;
+  font-size: 50px;
+  font-weight: bold;
+  transform: rotate(180deg);
+}
+.owl-carousel .owl-nav button.owl-prev span {
+  display: none;
+}
+.owl-carousel .owl-nav button.owl-next {
+  background-image: url("../images/arrow1.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -30px;
+  top: 150px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.owl-carousel .owl-nav button.owl-next span {
+  display: none;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #46A358;
+}
+.ui-widget.ui-widget-content .ui-widget-header {
+  background: #46A358;
+}
+.ui-widget.ui-widget-content .ui-state-default, .ui-widget.ui-widget-content .ui-widget-content .ui-state-default, .ui-widget.ui-widget-content .ui-widget-header .ui-state-default, .ui-widget.ui-widget-content .ui-button, .ui-widget.ui-widget-content html .ui-button.ui-state-disabled:hover, .ui-widget.ui-widget-content html .ui-button.ui-state-disabled:active {
+  border: 1px solid #46A358;
+  background: #46A358;
+  border-radius: 10px;
+}
+
+.faq .container {
+  max-width: 1200px;
+  margin: auto;
+}
+.faq .ui-accordion .ui-accordion-header {
+  border-radius: 22px;
+  padding: 20px 16px;
+  background-color: transparent;
+  border: solid 2px #34a853;
+}
+.faq .ui-accordion .ui-accordion-header.ui-state-active {
+  background-color: #A9DFBF;
+  border-bottom: none;
+  border-radius: 22px 22px 0 0;
+}
+.faq .ui-accordion .ui-accordion-header.ui-state-active .ui-icon {
+  transform: rotate(180deg);
+}
+.faq .ui-state-default, .faq .ui-widget-content .ui-state-default, .faq .ui-widget-header .ui-state-default, .faq .ui-button, .faq html .ui-button.ui-state-disabled:hover, .faq html .ui-button.ui-state-disabled:active {
+  border: solid 2px #34a853;
+  color: black;
+}
+.faq .ui-accordion .ui-accordion-content {
+  border: solid 2px #34a853;
+  background-color: #A9DFBF;
+  border-radius: 0 0 22px 22px;
+  border-top: none;
+}
+.faq .ui-icon {
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
+  background-image: none;
+  background-position: 0;
+  text-indent: 0;
 }
 
 /*# sourceMappingURL=test.css.map */

@@ -2,15 +2,17 @@
     <html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>main-page</title>
         <link rel="stylesheet" href="CSS/owl.carousel.css">
         <link rel="stylesheet" href="CSS/owl.theme.default.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://resources/demos/style.css">
         <link rel="icon" type="image/png" href="/images/favicon.png">
-        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-        <link rel="stylesheet" href="CSS/test.css">
+        <link rel="stylesheet" type="text/css" href="CSS/test.css">
         <link rel="stylesheet" href="CSS/media.css">
+        <link rel="stylesheet" href="CSS/test.css">
     </head>
     <body>
 <header class="flex_box_header">
@@ -118,25 +120,14 @@
                 </ul>
                 </article>
                 <div>
-                    <h4>Price Range</h4>
-                <div class="slider">
-                    <div class="ellipse">
-                        <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="7.5" cy="7.5" r="7.5" fill="#46A358" stroke="white" stroke-width="3"></circle>
-                        </svg>
-                    </div>
-                    <div class="line-extended"></div>
-                    <div class="line"></div>
-                    <div class="ellipse">
-                        <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="7.5" cy="7.5" r="7.5" fill="#46A358" stroke="white" stroke-width="3"></circle>
-                        </svg>
-                    </div>
-                </div>
+                    <p>
+                        <label for="amount">Price range:</label>
+                        <input type="text" id="amount" readonly="" style="border:0; color: #46A358; font-weight:bold;">
+                    </p>
+
+                    <div id="slider-range"></div>
                     <div class="price_filter">
-                        <p>Price:
-                            <span>$39 - $1230</span>
-                        </p>
+
                     </div>
                 </div>
                 <div><a href="#" class="filter_button">Filter</a>
@@ -673,7 +664,59 @@
             </div>
         </div>
     </section>
-    <footer>
+<section class="faq">
+    <div class="container">
+<div id="accordion">
+    <h3>Welcome to GreenShop - Your Eco-Friendly Destination<span class="ui-icon">
+            <img src="images/arrow1.svg">
+        </span></h3>
+    <div>
+        <p>
+            At GreenShop, we're passionate about sustainability and committed to providing you with the best eco-friendly products. From organic groceries to biodegradable household items, our curated selection ensures that every purchase you make contributes to a healthier planet. Our team of experts handpicks each product based on stringent environmental standards, ensuring that you receive only the finest quality items. Whether you're a long-time eco-warrior or just starting your green journey, GreenShop is here to support you every step of the way.
+        </p>
+
+    </div>
+    <h3>Discover the Green Difference<span class="ui-icon">
+            <img src="images/arrow1.svg">
+        </span></h3>
+    <div>
+        <p>
+            What sets GreenShop apart is our unwavering dedication to reducing our carbon footprint. We believe that small changes can make a big impact, which is why we've adopted sustainable practices throughout our operations. Our packaging is 100% recyclable, and we offer a wide range of zero-waste products to help you minimize waste in your daily life. Join our community of like-minded individuals who are committed to making a difference. Together, we can create a cleaner, greener future for generations to come.
+        </p>
+    </div>
+    <h3>Join Our Eco-Friendly Community<span class="ui-icon">
+            <img src="images/arrow1.svg">
+        </span></h3>
+    <div>
+        <p>
+            GreenShop is more than just a store; it's a movement. We host regular workshops and events to educate and inspire our customers on sustainable living practices. From DIY composting classes to eco-friendly product demonstrations, there's always something new to learn and explore. Plus, our loyalty program rewards you for every green choice you make, giving you exclusive access to special offers and discounts. Visit us today and become a part of the GreenShop family, where every purchase is a step towards a more sustainable world.
+        </p>
+        <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+        </ul>
+    </div>
+    <h3>Our Commitment to Ethical Sourcing<span class="ui-icon">
+            <img src="images/arrow1.svg">
+        </span></h3>
+    <div>
+        <p>
+            At GreenShop, we understand that sustainability goes hand in hand with ethical practices. We are committed to sourcing our products from suppliers who adhere to fair trade principles and prioritize the welfare of their workers. By choosing GreenShop, you are supporting businesses that pay fair wages, ensure safe working conditions, and promote community development. Our products not only help protect the environment but also empower communities around the world. Shop with confidence, knowing that every purchase you make is a vote for a more just and equitable global economy.
+        </p>
+        <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+        </p>
+    </div>
+</div>
+    </div>
+</section>
+
+
+
+<footer>
         <div class="footer-container">
             <div class="flex-box flex-box-1">
                 <div class="box">
@@ -880,6 +923,7 @@
     <p class="copyright">© 2021 GreenShop. All Rights Reserved.</p>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
    <script src="js/owl.carousel.js"></script>
+<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
     <script src="js/scripts.js"></script>
     </body>
     </html>
