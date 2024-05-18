@@ -139,11 +139,8 @@
             li {
             flex-center();
                 position: relative;
-                width: 100%;
                 height: var(--link-height);
                 list-style: none;
-                opacity: 0;
-                transform: translateX(-50%);
                 transition: all var(--transition-time) cubic-bezier(0.8, 0, 0.33, 0.9);
                 transition-delay: calc(30ms + var( - delay));
                 cursor: pointer;
