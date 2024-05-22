@@ -30,13 +30,14 @@ body {
 
 /* Стилізація основного контейнера заголовка */
 .flex_box_header {
-  display: flex;
-  justify-content: space-around;
   padding: 10px 20px;
   flex-wrap: wrap;
   margin: 26px auto;
   align-items: flex-start;
   border-bottom: 0 solid rgba(70, 163, 88, 0.5);
+}
+.flex_box_header .row {
+  justify-content: space-between;
 }
 
 /* Стилізація логотипу */
@@ -66,6 +67,7 @@ body {
   align-items: center;
   transition: all 0.3s ease;
   font-weight: 700;
+  justify-content: center;
   /*випадаюче меню*/
 }
 .header_box ul li {
@@ -180,6 +182,7 @@ body {
 
 .header-icons-login {
   display: flex;
+  justify-content: flex-end;
   /* Стилізація кнопки входу */
 }
 .header-icons-login .header-icons {
@@ -242,6 +245,9 @@ body {
   min-height: 450px;
   max-width: 1200px;
   margin: auto;
+}
+.banner .container .row {
+  flex-wrap: nowrap;
 }
 .banner .container .greenshop-welcome {
   font-size: 14px;
@@ -419,7 +425,6 @@ body {
   color: green;
 }
 .categories .right_content {
-  max-width: 840px;
   flex-direction: column;
   display: flex;
 }

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>main-page</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="CSS/bootstrap.css">
         <link rel="stylesheet" href="CSS/owl.carousel.css">
         <link rel="stylesheet" href="CSS/owl.theme.default.css">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
@@ -19,7 +19,8 @@
         <link rel="stylesheet" href="CSS/test.css">
     </head>
     <body>
-        <header class=" container flex_box_header">
+        <header class="flex_box_header">
+            <div class="container">
             <div class="row">
     <div class=" col-md-1 col-lg-3 box_header_1">
         <a href="#" class="logo">
@@ -88,10 +89,12 @@
     </div>
     </div>
             </div>
+            </div>
 </header>
     <section class="banner">
         <div class="container">
-            <article>
+            <div class="row">
+            <article class="col-6">
                 <h4 class="greenshop-welcome">Welcome to GreenShop</h4>
                 <h1 class="better-planet">
                     Let’s Make a
@@ -103,13 +106,17 @@
                 </p>
                 <a href="#" class="shop-now-button">SHOP NOW</a>
             </article>
+                <div class="col-6">
             <img src="images/picture1.png" alt="banner">
+                </div>
+        </div>
         </div>
     </section>
     <!--product categories-->
     <section class="categories">
-        <div class="container_2">
-            <div class="left_sidebar">
+        <div class="container">
+        <div class="row container_2">
+            <div class="col-3 left_sidebar">
                 <article class="category">
                     <h4><a href="#">Categories</a></h4>
                 <ul class="category_list">
@@ -151,7 +158,7 @@
               <img src="images/SuperSaleBanner.png" alt="super_sale_banner">
                 </article>
             </div>
-            <div class="right_content">
+            <div class="col-9 right_content">
                 <div class="flex_2">
     <ul>
         <li>All Plants</li>
@@ -164,7 +171,7 @@
                     </div>
                 </div>
                 <div class="d_flex">
-                    <article class="product-description">
+                    <article class="2 product-description">
                         <img src="images/image_1.png" alt="Barberton Daisy">
                         <p>Barberton Daisy</p>
                         <span>$119.00</span>
@@ -199,7 +206,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="product-description">
+                    <article class="col-2 product-description">
                         <img src="images/product_2.jpg" alt="Angel Wing Begonia">
                         <p>Angel Wing Begonia</p>
                         <span>$169.00</span>
@@ -241,7 +248,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="product-description">
+                    <article class="col-2 product-description">
                         <span class="sale">13% OFF</span>
                         <img src="images/image15.png" alt="African Violet">
                         <p>African Violet</p>
@@ -285,7 +292,7 @@
                         </ul>
                         <span class="sale_1">$229.00</span>
                     </article>
-                    <article class="product-description">
+                    <article class="col-3 product-description">
                         <img src="images/image_4.png" alt="Beach Spider Lily">
                         <p>Beach Spider Lily</p>
                         <span>$129.00</span>
@@ -327,7 +334,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="product-description">
+                    <article class="col-3 product-description">
                         <img src="images/image14.png" alt="Blushing Bromeliad">
                         <p>Blushing Bromeliad</p>
                         <span>$139.00</span>
@@ -369,7 +376,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="product-description">
+                    <article class="col-3 product-description">
                         <img src="images/image_6.png" alt="Aluminum Plant">
                         <p>Aluminum Plant</p>
                         <span>$179.00</span>
@@ -411,7 +418,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="product-description">
+                    <article class="col-3 product-description">
                         <img src="images/image_7.png" alt="Bird's Nest Fern">
                         <p>Bird's Nest Fern</p>
                         <span>$99.00</span>
@@ -453,7 +460,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="product-description">
+                    <article class="col-3 product-description">
                         <img src="images/image_8.png" alt="Broadleaf Lady Palm">
                         <p>Broadleaf Lady Palm</p>
                         <span>$59.00</span>
@@ -495,7 +502,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="product-description">
+                    <article class="col-3 product-description">
                         <img src="images/image_9.png" alt="Chinese Evergreen">
                         <p>Chinese Evergreen</p>
                         <span>$39.00</span>
@@ -558,12 +565,13 @@
             </div>
             </div>
         </div>
+        </div>
     </section>
     <!--Blog-->
     <section class="blog">
-        <div class="blog_post">
-            <div class="d_flex">
-                <article class="flex_row">
+        <div class="container blog_post">
+            <div class=" row d_flex">
+                <article class=" col-6 flex_row">
                     <img src="images/image14.png" alt="summer_cactus">
                     <div class="rectangle">
                         <h4>Summer cactus & succulents</h4>
@@ -571,7 +579,7 @@
                         <a href="#" class="read-more-btn">Find More →</a>
                     </div>
                 </article>
-                <article class="flex_row">
+                <article class="col-6 flex_row">
                     <img src="images/image15.png" alt="styling_trends">
                     <div class="rectangle">
                         <h4>Styling Trends & much more</h4>
@@ -580,13 +588,14 @@
                     </div>
                 </article>
             </div>
-                <div class="blog_info">
+                <div class="container blog_info">
+                    <div class="row">
                     <h3 class="post">Our Blog Posts</h3>
                     <p class="post_p">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
                 </div>
             <div class="d_flex">
             <div class="article_container owl-carousel">
-                    <article>
+                    <article class="col-3">
                         <img src="images/picture16.png" alt="succulents">
                         <span class="article_date">
                            September 12  I Read in 6 minutes
@@ -596,7 +605,7 @@
                         <p>Cacti are succulents are easy care plants for any home or patio. </p>
                         <a href="#" class ="read-more">Read More →</a>
                     </article>
-                    <article>
+                    <article class="col-3">
                         <img src="images/image16.png" alt="cactus_succulent">
                        <span class="article_date">
                            September 13  I Read in 2 minutes
@@ -606,7 +615,7 @@
                         <p>Best in hanging baskets. Prefers medium to highlight.</p>
                         <a href="#" class="read-more">Read More →</a>
                     </article>
-                    <article>
+                    <article class="col-3">
                         <img src="images/image17.png" alt="cacti_succulent">
                         <span class="article_date">
                           September 15  I Read in 3 minutes
@@ -616,7 +625,7 @@
                         <p>Cacti and succulents thrive in containers and because most are.</p>
                         <a href="#" class="read-more">Read More →</a>
                     </article>
-                    <article>
+                    <article class="col-3">
                         <img src="images/image18.png" alt="best_houseplants">
                         <span class="article_date">
                          September 15  I Read in 2 minutes
@@ -626,7 +635,7 @@
                         <p>The benefits of houseplants are endless. In addition to.</p>
                         <a href="#" class="read-more">Read More →</a>
                     </article>
-                <article>
+                <article class="col-3">
                     <img src="images/picture16.png" alt="succulents">
                     <span class="article_date">
                            September 12  I Read in 6 minutes
@@ -636,7 +645,7 @@
                     <p>Cacti are succulents are easy care plants for any home or patio. </p>
                     <a href="#" class ="read-more">Read More →</a>
                 </article>
-                <article>
+                <article class="col-3">
                     <img src="images/image16.png" alt="cactus_succulent">
                     <span class="article_date">
                            September 13  I Read in 2 minutes
@@ -646,7 +655,7 @@
                     <p>Best in hanging baskets. Prefers medium to highlight.</p>
                     <a href="#" class="read-more">Read More →</a>
                 </article>
-                <article>
+                <article class="col-3">
                     <img src="images/image17.png" alt="cacti_succulent">
                     <span class="article_date">
                           September 15  I Read in 3 minutes
@@ -656,7 +665,7 @@
                     <p>Cacti and succulents thrive in containers and because most are.</p>
                     <a href="#" class="read-more">Read More →</a>
                 </article>
-                <article>
+                <article class="col-3">
                     <img src="images/image18.png" alt="best_houseplants">
                     <span class="article_date">
                          September 15  I Read in 2 minutes
@@ -668,6 +677,7 @@
                 </article>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 <section class="faq">
