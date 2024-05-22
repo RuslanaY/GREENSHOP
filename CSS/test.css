@@ -677,6 +677,10 @@ body {
 }
 .blog .flex_row {
   display: flex;
+  justify-content: center;
+}
+.blog .flex_row .rectangle {
+  margin-top: 130px;
 }
 .blog .flex_row .img {
   width: 289px;
@@ -734,7 +738,7 @@ body {
   border-radius: 4px 0 0 4px;
   border: 1px solid #ccc;
 }
-.footer-container .flex-box .large-box .email-form button {
+.footer-container .flex-box .large-box .email-form .col-4 button {
   font-size: 16px;
   padding: 10px 30px;
   border: none;
